@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <script src="https://kit.fontawesome.com/8d3ac219e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="navBar">
+            <a class="nav-brand" href="#"><span class="logo">P</span>roDuct</a>
+            <ul class="navBar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Product</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">Price</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="check-form">
+        <div class="row">
+            <div class="col-75">
+               <div class="container">
+                   <h1>Checkout Form</h1>
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fName"><i class="fas fa-user"></i> Full Name <span>*</span></label>
+                                <input type="text" name="fName" id="fName" placeholder="Jhon M. Deo" required>
+        
+                                <label for="email"><i class="fas fa-envelope"></i> Email ID <span>*</span></label>
+                                <input type="email" name="email" id="email" placeholder="jhon@example.com" required>
+        
+                                <label for="address"><i class="far fa-address-card"></i> Address <span>*</span></label>
+                                <input type="text" name="address" id="address" placeholder="444 west 15 street" required>
+        
+                                <label for="city"><i class="fas fa-city"></i> City <span>*</span></label>
+                                <input type="text" name="city" id="city" placeholder="Dhaka" required>
+
+                                <div class="row">
+                                    <div class="mini-col-50">
+                                        <label for="state">State <span>*</span></label>
+                                        <input type="text" name="state" id="state" placeholder="DAC" required>
+                                    </div>
+                                    
+                                    <div class="mini-col-50">
+                                        <label for="zip">Zip <span>*</span></label>
+                                        <input type="text" name="zip" id="zip" placeholder="1000" required>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fName">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="amex fab fa-cc-amex"></i>
+                                    <i class="visa fab fa-cc-visa"></i>
+                                    <i class="paypal fab fa-paypal"></i>
+                                    <i class="mastercard fab fa-cc-mastercard"></i>
+                                    <i class="discover fab fa-cc-discover"></i>
+                                </div>
+
+                                <label for="cName">Name on Card <span>*</span></label>
+                                <input type="text" name="cName" id="cName" placeholder="Jhon M. Deo" required>
+
+                                <label for="ccnum">Credit card number <span>*</span></label>
+                                <input type="text" name="ccnum" id="ccnum" placeholder="1111-2222-3333-4444" required>
+
+                                <label for="expmonth">Expired Month <span>*</span></label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+
+                                <div class="row">
+                                    <div class="mini-col-50">
+                                        <label for="expyear">Exp. Year <span>*</span></label>
+                                        <input type="text" name="expyear" id="expyear" placeholder="August" required>
+                                    </div>
+                                    
+                                    <div class="mini-col-50">
+                                        <label for="ccv">CCV <span>*</span></label>
+                                        <input type="text" name="ccv" id="ccv" placeholder="357" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label>
+                            <input type="checkbox" name="" id="sameAdr">
+                            Shipping address same as billing
+                        </label>
+                        <input type="button" value="Continue to checkout" class="btn">
+                    </form>
+               </div> 
+            </div>
+            
+            <div class="col-25">
+                <div class="cart-container">
+                    <h4>Cart <span class="price"><i class="fas fa-cart-plus"></i> 5</span></h4>
+                    <p><a href="#">Product-1</a> <span class="price">$ 14.00</span></p>
+                    <p><a href="#">Product-1</a> <span class="price">$ 10.00</span></p>
+                    <p><a href="#">Product-1</a> <span class="price">$ 24.00</span></p>
+                    <p><a href="#">Product-1</a> <span class="price">$ 19.00</span></p>
+                    <p><a href="#">Product-1</a> <span class="price">$ 20.00</span></p>
+                    <hr>
+                    <h4>Total =  <span class="price">$ 87.00</span></h4>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

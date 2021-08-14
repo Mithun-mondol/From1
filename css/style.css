@@ -1,0 +1,303 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(https://i.pinimg.com/originals/2e/1e/c9/2e1ec928ed6366d98f286b71cea328fc.jpg);
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+#header {
+  padding: 3% 15%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.nav-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+span.logo {
+  color: #78bc41;
+  font-size: 3.5rem;
+}
+
+.navBar-nav {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  background-color: #78bc41;
+  border-radius: 5px;
+  color: white;
+}
+
+.nav-link::before {
+  content: "";
+  background-color: #37841e;
+  position: absolute;
+  width: 5px;
+  height: 0%;
+  top: 0px;
+  left: 11px;
+  transition: 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  background-color: #37841e;
+  position: absolute;
+  width: 5px;
+  height: 0%;
+  top: 0px;
+  right: -16px;
+  transition: 0.3s;
+}
+
+.nav-link:hover:after {
+  content: "";
+  background-color: #37841e;
+  position: absolute;
+  width: 5px;
+  height: 122%;
+  top: -5px;
+  right: -16px;
+}
+
+.nav-link:hover:before {
+  content: "";
+  background-color: #37841e;
+  position: absolute;
+  width: 5px;
+  height: 122%;
+  top: -5px;
+  left: 11px;
+}
+
+/* form row & col */
+
+.container {
+  background-color: rgb(162, 224, 89, .5);
+  padding: 16px 20px;  
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 5px 5px #b9e5d6;
+}
+
+h1 {
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  top: -55px;
+  text-align: center;
+  transform: translate(-50%);
+  background-color: #8fe136;
+  padding: 16px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+}
+
+span {
+  color: red;
+}
+
+#check-form {
+  padding: 3% 15%;
+}
+
+form {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  margin: 0 -16px;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-50 {
+  flex: 50%;
+ }
+
+ .mini-col-50{
+    flex: 50%;
+    padding: 0 16px;
+ }
+
+.col-25 {
+  flex: 25%;
+  flex-basis: 250px;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 16px;
+}
+
+/* label & Input */
+
+label {
+  color: black;
+  display: block;
+  margin-bottom: 16px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 10px;
+  background-color: #75f57f;
+  border-radius: 5px;
+  /* color: #37841e; */
+  border: 1px solid #7ce256;
+  outline: none;
+}
+
+/* .col-50 input:nth-child(4){
+  /* margin-bottom: 0px; */
+} */
+
+input::placeholder{
+  color: #35801A;
+ 
+}
+
+input:focus {
+  box-shadow: 0 0 5px 5px #b9e5d6;
+}
+
+/* Cards */
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 31px;
+  margin-bottom: 16px;
+}
+
+.amex {
+  color: navy;
+  padding-right: 10px;
+}
+
+.visa {
+  color: #1a1f71;
+  padding-right: 10px;
+}
+
+.paypal {
+  color: #003087;
+  padding-right: 10px;
+}
+
+.mastercard {
+  color: #eb001b;
+  padding-right: 10px;
+}
+
+.discover {
+  color: #f9a021;
+}
+
+/* Botton */
+
+#sameAdr {
+  width: auto;
+}
+
+.btn {
+  color: white;
+  border: none;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8FE136;
+  font-size: 1.25rem;
+}
+
+.btn:hover {
+  color: #2E7517;
+  cursor: pointer;
+}
+
+/* cart */
+
+.cart-container {
+  background-color: rgb(185, 229, 214, .5);
+  padding: 16px 20px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 5px 5px #8fe136;
+}
+
+.price {
+  float: right;
+}
+
+h4 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .row{
+        flex-direction: column-reverse;
+    }
+    
+ 
+
+    .col-25{
+        margin-bottom: 25px;
+    }
+
+    h1{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+}
